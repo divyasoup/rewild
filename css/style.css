@@ -1,0 +1,54 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h1 a {
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%
+}
+img {
+    padding: 20px;
+    margin-left: auto;
+    margin-right :auto;
+    display: block;
+}
+/* title screen image */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.index {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* play button? */
+.play {
+    font-size: xx-large;
+    position: absolute;
+    top: 70%;
+    left: 65%;
+
+
+}
+.buttons {
+    text-align: center;
+    /* font-style:italic; */
+    line-height: 4px;
+}
+.closed {
+    padding-top: 50px;
+    line-height: 4px;
+    text-align: center;
+    text-decoration: line-through;
+}
