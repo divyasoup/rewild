@@ -20,7 +20,7 @@
         } 
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,49 +33,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 </head>
 
-<body class="about">
+<body>
     <div class="mobNav">
         <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Rewild</a>
-                <a href="about.html">About</a>
-                <a href="contents.html">Pages</a>
-                <a href="thecity.html">Play</a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
     </div>
     <header>
-        <div class="aboutNav">
+        <div class="container">
+            <img src="LOGO" alt="logoooo" class="logo">
+
             <nav>
                 <ul>
                     <li><a href="index.html">Rewild</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contents.html">Pages</a></li>
                     <li><a href="thecity.html">Play</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <h1>About</h1>
-    <img class="aboutImage" src="images/covertext.png" alt="Cover">
-    <p>
-        <strong><i>Rewild</i> is a web browser game made to explore the relationship between
-            interactivity and artwork. </strong>
+    <div class="grid">
+        <div>
+            <img class="image" src="" alt="">
+        </div>
+        <div class="script">
+            <h1></h1>
+            <p>
 
-        <br><br>
+            </p>
+        </div>
+    </div>
 
-        <i>Rewild</i> is an artistic piece which aims to emphasize choices. It forces the viewer to make the choice to continually examine the story and art, rather than simply displaying the work. Divya created this artwork through encoding the website and creating all of the artwork over the span of two semesters.
-    </p>
+    <p class="closed"></p>
+    <a class="buttons" href="">
+        <p></p>
+    </a>
 
+    <br>
+    <br>
+
+    <a href="index.html">
+        <p class="buttons">Start Over.</p>
+    </a>
 </body>
 
 </html>

@@ -16,12 +16,12 @@
 
 @font-face {
   font-family: Hershey;
-  src: url(./font/Hershey-Noailles-OldFrench-Bold.ttf);
+  src: url("/font/Hershey-Noailles-OldFrench-Bold.ttf");
 }
 
 body {
   overflow: hidden;
-  background-image: url(/images/paper.jpg);
+  background-image: url("/images/paper.jpg");
   background-size: cover;
   background-repeat:repeat-y;
   background-color: #fffef2;
@@ -148,11 +148,14 @@ a.icon {
 .aboutImage {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
 }
 .aboutNav {
   display: flex;
   justify-content: center;
+}
+.about {
+  overflow: scroll;
 }
 
 
