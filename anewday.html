@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Wake Up</h1>
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
 
-    <img src="" alt="" width="40%">
-    
-    <p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
+    </div>
 
-    </p>
+    <div class="grid">
+        <div>
+            <img class="image" src="images/anewday.PNG" alt="Fox, awake, holding leaf in mouth" width="40%">
+        </div>
+        <div>
+            <header>
+                <div class="navLarge">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Rewild</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contents.html">Pages</a></li>
+                            <li><a href="thecity.html">Play</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="script">
+                <h1 class="heading">A New Day</h1>
+                <p>
+                    It is still dark when you wake up and the leaves have piled thickly around your muzzle. There are
+                    more
+                    now, perhaps due to the wind. The ground around you is damp when you step out. The burrow and the
+                    leaves
+                    have protected you from the rain.
+                </p>
+                <p>
+                    You hunt again, delighted by the sheer amount of prey that surrounds you in the new area. You can
+                    see
+                    just as well in the moonlight as you can under the sun, and decide to explore your surroundings.
+                </p>
+
+                <a href="goleft2.html">
+                    <p class="buttons">Go Left</p>
+                </a>
+                <a href="goright2.html">
+                    <p class="buttons">Go Right</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
 
 
-    <a href="headforward.html"><p class="buttons">Head Forward</p></a>
-    <a href="restlonger.html"><p class="buttons">Go Back</p></a>
-
-    <br>
-    <br>
-
-    <a href="index.html"><p class="buttons">Start Over.</p></a>
 </body>
+
 </html>

@@ -1,35 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="index">
-    <h1>Rewild</h1>
 
-    <div class="container">
-        <img src="images/cover.png" alt="Fox napping" width="60%"">
-        <div class="play"> <a href="thecity.html">Play</a></div>
+<body id="index">
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
+    </div>
+    
+    <div class="grid">
+        <div>
+            <img class="image" src="images/cover.png" alt="Cover">
+        </div>
+        <div>
+            <header>
+                <div class="navLarge">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Rewild</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contents.html">Pages</a></li>
+                            <li><a href="thecity.html">Play</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="script">
+                <h1>Rewild</h1>
+            <p>
+                <strong><i>Rewild</i> is a web browser game made to explore the relationship between
+                    interactivity and artwork. </strong>
+        
+                    <br><br>
+                    
+                    Playing as a fox, you explore the dynamics between natural regrowth of life within humans
+                    structures. The game is highly focused on choices and artwork, choosing to be an experience rather 
+                    than a "game" or an "artwork" alone. 
+            </p>
+            <a href="thecity.html"><p>Play Now</p></a>
+            </div>
+    
+        </div>
+
     </div>
 
-    <div>
-        <p>
-            <strong><i>Rewild</i> is a web browser game made to explore the relationship between
-            interactivity and artwork. </strong>
 
-            <br><br>
-            
-            Playing as a fox, you explore the dynamics between natural regrowth of life within humans
-            structures. The game is highly focused on choices and artwork, choosing to be an experience rather 
-            than a "game" or an "artwork" alone. 
-        </p>
-
-        <a href="thecity.html"><p>Play Now</p></a>
-    </div>
-</div>
 </body>
+
 </html>

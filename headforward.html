@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Head Forward</h1>
 
-    <img src="" alt="" width="40%">
-    
-    <p>
+<body id="headforward">
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
 
-    </p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
+    </div>
 
+    <div class="grid">
+        <div>
+            <img class="image" src="images/headforward.PNG" alt="Fox walking along street">
+        </div>
+        <div>
+            <header>
+                <div class="navLarge">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Rewild</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contents.html">Pages</a></li>
+                            <li><a href="thecity.html">Play</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="script">
+            <h1>Head Forward</h1>
+            <p>
+                As you travel, you make sure to check the scent of your surroundings. There appear to be no other foxes
+                living in the territory, and you begin to feel safer as you walk through the suburbs. You keep an eye
+                out, though, just in case.
+            </p>
+            <p>
+                You start to recognize the shape of the buildings, recalling how you lived there with your family for
+                some time. You all had scattered after the humans found you and you’d never seen them again. You’d made
+                your way to the crowded areas of the city, where there was a constant amount of food and more hiding
+                places.
+            </p>
+            <p>
+                The space between the houses widens and there are fewer black bins. You pick up your pace, hearing the
+                scurrying of little creatures more distinctly. Besides the noises of prey, you can also hear running
+                water and the rustling of leaves. You’re very thirsty.
+            </p>
+            <a href="keepgoing.html">
+                <p class="buttons">Keep Going</p>
+            </a>
+            </div>
+        </div>
+    </div>
 
-    <a href="keepgoing.html"><p class="buttons">Keep Going</p></a>
-    <a href="wakeup.html"><p class="buttons">Go Back</p></a>
-
-    <br>
-    <br>
-
-    <a href="index.html"><p class="buttons">Start Over.</p></a>
 </body>
+
 </html>

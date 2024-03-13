@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Sit Under Tree</h1>
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
 
-    <img src="images/situndertree.PNG" alt="Fox sleeping under a tree" width="40%">
-    
-    <p>
-        There is more grass now. Bushes and small trees are consistent. The shaking of the earth woke you up too early, and in your desperation to find somewhere safe, you’d left before you were fully rested. There is shade under the trees and you decide to rest your paws for a while. 
-    </p>
-    <p>
-        As you sit, you grow more tired. With how little noise and movement there has been around you in your travels, resting seems like it would be safe enough. You bark loudly, hopefully scaring off any potential threats. Although you’ve left your territory, you will be going further away soon. Being rested would be vital.
-    </p>
-    <p>
-        You lay out beneath the tree, safely under its safety, and close your eyes for a while.
-    </p>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Rewild</a>
+                <a href="about.html">About</a>
+                <a href="contents.html">Pages</a>
+                <a href="thecity.html">Play</a>
+            </div>
+    </div>
 
-    <a href="restlonger.html"><p class="buttons">Rest Longer</p></a>
-    <a href="wakeup.html"><p class="buttons">Wake Up</p></a>
-    <a href="continue1.html"><p class="buttons">Go Back</p></a>
+    <header>
+        <div class="navLarge">
+            <img src="LOGO" alt="logoooo" class="logo">
 
-    <br>
-    <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Rewild</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contents.html">Pages</a></li>
+                    <li><a href="thecity.html">Play</a></li>
+                </ul>
+            </nav>
 
-    <a href="index.html"><p class="buttons">Start Over.</p></a>
+        </div>
+    </header>
+
+    <div class="grid">
+        <div>
+            <img class="image" src="images/situndertree.PNG" alt="Fox sleeping under a tree">
+        </div>
+        <div class="script">
+            <h1>Sit Under Tree</h1>
+            <p>
+                There is more grass now. Bushes and small trees are consistent. The shaking of the earth woke you up too
+                early, and in your desperation to find somewhere safe, you’d left before you were fully rested. There is
+                shade under the trees and you decide to rest your paws for a while.
+            </p>
+            <p>
+                As you sit, you grow more tired. With how little noise and movement there has been around you in your
+                travels, resting seems like it would be safe enough. You bark loudly, hopefully scaring off any
+                potential
+                threats. Although you’ve left your territory, you will be going further away soon. Being rested would be
+                vital.
+            </p>
+            <p>
+                You lay out beneath the tree, safely under its safety, and close your eyes for a while.
+            </p>
+            <a href="restlonger.html">
+                <p class="buttons">Rest Longer</p>
+            </a>
+            <a href="wakeup.html">
+                <p class="buttons">Wake Up</p>
+            </a>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

@@ -1,37 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1><a href="index.html">Rewild</a></h1>
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
 
-    <img src="images/thecity.png" alt="Drawing of a sleeping fox" width="40%">
-    
-    <p>
-        You are a fox. Up until recently, you lived in a city with lots of loud noises and loud humans. You stayed hidden most of the time. Recently, the ground shook and you hid underneath a large structure until it ended. When you went outside, it was silent.
-    </p>
-        
-    <p>
-        There was no humans around, not that you could see, so you decided to go try to find some scraps to eat. Overturned bins supply you with a large amount of food every week, enough that you can live off a meager diet of rats and mice, when there is nothing else.
-    </p> 
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
+    </div>
 
-    <p>
-        The silence is eerie to you, it unsettles you. You eat quickly and leave the area, hoping to find any noise.
-    </p>
 
-    <p class="closed"> Hide</p>
-    <a href="goleft1.html"><p class="buttons">Go Left</p></a>
-    <a href="goright1.html"><p class="buttons">Go Right</p></a>
+    <div class="grid">
+        <div>
+            <img class="image" src="images/thecity.png" alt="Drawing of a sleeping fox">
+        </div>
+        <div>
+            <header>
+                <div class="navLarge">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Rewild</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contents.html">Pages</a></li>
+                            <li><a href="#">Play</a></li>
+                        </ul>
+                    </nav>
 
-    <br>
-    <br>
+                </div>
+            </header>
+            <div class="script overflow">
+                <h1>The City</h1>
+                <p>
+                    You are a fox. Up until recently, you lived in a city with lots of loud noises and loud humans. You
+                    stayed hidden most of the time. Recently, the ground shook and you hid underneath a large structure
+                    until it ended. When you went outside, it was silent.
+                </p>
 
-    <a href="index.html"><p class="buttons">Start Over.</p></a>
-    
+                <p>
+                    There was no humans around, not that you could see, so you decided to go try to find some scraps to
+                    eat.
+                    Overturned bins supply you with a large amount of food every week, enough that you can live off a
+                    meager
+                    diet of rats and mice, when there is nothing else.
+                </p>
+
+                <p>
+                    The silence is eerie to you, it unsettles you. You eat quickly and leave the area, hoping to find
+                    any
+                    noise.
+                </p>
+                <p class="closed">Hide</p>
+                <a href="goleft1.html">
+                    <p class="buttons">Go Left</p>
+                </a>
+                <a href="goright1.html">
+                    <p class="buttons">Go Right</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

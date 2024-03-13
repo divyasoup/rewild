@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Rewild</title>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kite+One&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Continue</h1>
+    <div class="mobNav">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
 
-    <img src="images/continue1.PNG" alt="Fox head staring at houses" width="40%">
-
-    <h2>Continue</h2>
-
-    <p>	
-        As you walk along the street, you notice that the buildings here have grass and bushes and trees around them. Normally, you would travel at night, but the commotion gave you no choice but to move during the day. You take careful steps, avoiding the sharp objects beneath your paws. 
-    </p>
-    <p>
-        It’s hot today, you can tell the summer is waning. You find puddles of water and drink from them gratefully. As you wander around, you realize that the buildings around you are shrinking. They are still wrecked, but their short height is not from that. 
-    </p>
-    <p>
-        You see more bodies and rip off the cloth from them to play with. It flies around in the wind and you bat at it. You start to feel tired.
-    </p>
- 
-    <p class="closed">Continue</p>
-    <a href="situndertree.html"><p class="buttons">Sit Under Tree</p></a>
-    <a href="goright1.html"><p class="buttons">Go Back</p></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Rewild</a>
+            <a href="about.html">About</a>
+            <a href="contents.html">Pages</a>
+            <a href="thecity.html">Play</a>
+        </div>
+    </div>
     
-    <br>
-    <br>
+    <div class="grid">
+        <div>
+            <img class="image" src="images/continue1.PNG" alt="Fox head staring at houses">
+        </div>
+        <div>
+            <header>
+                <div class="navLarge">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Rewild</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contents.html">Pages</a></li>
+                            <li><a href="thecity.html">Play</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="script overflow">
+                <h1>Continue</h1>
+                <p>
+                    As you walk along the street, you notice that the buildings here have grass and bushes and trees
+                    around
+                    them. Normally, you would travel at night, but the commotion gave you no choice but to move during
+                    the
+                    day. You take careful steps, avoiding the sharp objects beneath your paws.
+                </p>
+                <p>
+                    It’s hot today, you can tell the summer is waning. You find puddles of water and drink from them
+                    gratefully. As you wander around, you realize that the buildings around you are shrinking. They are
+                    still wrecked, but their short height is not from that.
+                </p>
+                <p>
+                    You see more bodies and rip off the cloth from them to play with. It flies around in the wind and
+                    you
+                    bat at it. You start to feel tired.
+                </p>
+                <p class="closed">Continue</p>
+                <a href="situndertree.html">
+                    <p class="buttons">Sit Under Tree</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <a href="index.html"><p class="buttons">Start Over.</p></a>
-    
+
 </body>
+
 </html>
