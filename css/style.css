@@ -16,10 +16,11 @@
 
 @font-face {
   font-family: Hershey;
-  src: url(/font/Hershey-Noailles-OldFrench-Bold.ttf);
+  src: url(./font/Hershey-Noailles-OldFrench-Bold.ttf);
 }
 
 body {
+  overflow: hidden;
   background-image: url(/images/paper.jpg);
   background-size: cover;
   background-repeat:repeat-y;
