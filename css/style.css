@@ -20,7 +20,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url("../images/paper.jpg");
   background-size: cover;
   background-repeat:repeat-y;
@@ -46,6 +46,24 @@ p {
   padding-right: 10%;
   padding-left: 10%;
 }
+.buttons {
+  background-color: #739470;
+  color: rgb(238, 228, 228);
+  border-radius: 12px;
+  padding: 20px; 
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: Hershey;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+.buttons:hover {
+  background-color: #5e7c5b;
+}
 .image {
   height: 100%;
   width: 100%;
@@ -70,22 +88,20 @@ ul.myUL {
   line-height: 4px;
 }
 .closed {
-  padding-top: 50px;
   line-height: 4px;
   text-align: center;
   text-decoration: line-through;
+}
+.closed:hover {
+  background-color: #739470;
 }
 
 .logo {
   float: left;
   padding: 10px 0;
 }
-
-.script {
-  border: solid 0px rgba(109, 109, 109, 0.5);
-}
 .overflow {
-  height: 600px;
+  height: 80%;
   overflow: scroll;
 }
 #pages h1 {
@@ -117,7 +133,7 @@ a.icon {
 
 /* The navigation menu links */
 .sidenav a {
-  font-family: lugrasimo;
+  font-family: Hershey;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -157,7 +173,9 @@ a.icon {
 .about {
   overflow: scroll;
 }
-
+/* audio {
+  display: none;
+} */
 
 
 
@@ -198,8 +216,7 @@ a.icon {
     object-fit: cover;
   }
   .script {
-        margin-top: 30%;
-        
+        margin-top: 10%;      
     }
     .navLarge {
       display: inline;
@@ -226,7 +243,7 @@ a.icon {
 
   nav li {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 55px;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -234,7 +251,7 @@ a.icon {
 
   nav a {
     font-family: Hershey;
-    font-size: larger;
+    font-size: x-large;
     color: rgb(238, 228, 228);
     text-decoration: none;
     text-transform: uppercase;

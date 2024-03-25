@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/audio.js">
     <title>Rewild</title>
 
     <script>
@@ -17,10 +18,13 @@
         /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-        } 
+        }
+        window.onLoad = function () {
+            document.getElementById("myAudio").play();
+        }
     </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,19 +44,23 @@
 </head>
 
 <body id="index">
+
+    <audio id="myAudio" src="audio/index.mp3" loop="loop" controls></audio>
+
+
     <div class="mobNav">
         <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Rewild</a>
-            <a href="about.html">About</a>
-            <a href="contents.html">Pages</a>
-            <a href="thecity.html">Play</a>
-        </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Rewild</a>
+                <a href="about.html">About</a>
+                <a href="contents.html">Pages</a>
+                <a href="thecity.html">Play</a>
+            </div>
     </div>
-    
+
     <div class="grid">
         <div>
             <img class="image" src="images/cover.PNG" alt="Cover">
@@ -72,24 +80,24 @@
             </header>
             <div class="script">
                 <h1>Rewild</h1>
-            <p>
-                <strong><i>Rewild</i> is a web browser game made to explore the relationship between
-                    interactivity and artwork. </strong>
-        
+                <p>
+                    <strong><i>Rewild</i> is a web browser game made to explore the relationship between
+                        interactivity and artwork. </strong>
+
                     <br><br>
-                    
+
                     Playing as a fox, you explore the dynamics between natural regrowth of life within humans
-                    structures. The game is highly focused on choices and artwork, choosing to be an experience rather 
-                    than a "game" or an "artwork" alone. 
-            </p>
-            <a href="thecity.html"><p>Play Now</p></a>
+                    structures. The game is highly focused on choices and artwork, choosing to be an experience rather
+                    than a "game" or an "artwork" alone.
+                </p>
+                <a href="thecity.html">
+                    <p class="buttons">Play Now</p>
+                </a>
             </div>
-    
+
         </div>
 
     </div>
-
-
 </body>
 
 </html>
