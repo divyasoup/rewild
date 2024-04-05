@@ -49,14 +49,16 @@ p {
 .buttons {
   background-color: #739470;
   color: rgb(238, 228, 228);
-  border-radius: 12px;
-  padding: 20px; 
+  border-radius: 15px;
+  padding: 10px; 
   margin-left: 30%;
   margin-right: 30%;
   font-family: Hershey;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+  text-align: center;
+  /* line-height: 15px; */
 }
 a {
   text-decoration: none;
@@ -75,20 +77,15 @@ a {
 #contents {
   text-align: center;
 }
-#contents ul {
-  font-family: Kite One;
-  margin-bottom: 5%;
+.contents {
+  font-family: Hershey;
+  font-size: 20px;
 }
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-.buttons {
-  text-align: center;
-  line-height: 4px;
+.contents a:hover {
+  text-decoration: underline;
 }
 .closed {
-  line-height: 4px;
+  line-height: 15px;
   text-align: center;
   text-decoration: line-through;
 }
@@ -99,10 +96,6 @@ ul.myUL {
 .logo {
   float: left;
   padding: 10px 0;
-}
-.overflow {
-  height: 80%;
-  overflow: scroll;
 }
 #pages h1 {
   padding: 1%;
@@ -176,7 +169,22 @@ a.icon {
 /* audio {
   display: none;
 } */
-
+.script {
+  overflow: scroll;
+  height: 550px;
+  overflow-x: hidden;
+}
+footer {
+  color: #283427;
+  padding-top: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+.title {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
 
 
 
@@ -198,6 +206,12 @@ a.icon {
 
 
 @media screen and (min-width: 500px) {
+  .script {
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
   .heading {
     display: block;
   }
@@ -215,9 +229,6 @@ a.icon {
     width: 100%;
     object-fit: cover;
   }
-  .script {
-        margin-top: 10%;      
-    }
     .navLarge {
       display: inline;
         width: 80%;
@@ -243,7 +254,7 @@ a.icon {
 
   nav li {
     display: inline-block;
-    margin-left: 55px;
+    margin-left: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -284,5 +295,9 @@ a.icon {
 }
 a.icon {
   display: none;
+}
+
+.index {
+  background-color:#283427
 }
 }

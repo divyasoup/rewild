@@ -20,7 +20,7 @@
         } 
     </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,17 +36,22 @@
 </head>
 
 <body>
+
+    <audio controls hidden autoplay loop>
+        <source src="audio/" type="audio/mpeg">
+    </audio>
+
     <div class="mobNav">
         <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Rewild</a>
-            <a href="about.html">About</a>
-            <a href="contents.html">Pages</a>
-            <a href="thecity.html">Play</a>
-        </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Rewild</a>
+                <a href="about.html">About</a>
+                <a href="contents.html">Pages</a>
+                <a href="thecity.html">Play</a>
+            </div>
     </div>
     <header>
         <div class="container">
@@ -74,19 +79,15 @@
 
             </p>
         </div>
+        <p class="closed"></p>
+        <a class="buttons" href="">
+            <p></p>
+        </a>
+
+        <footer><a href="index.html">Start Over</a></footer>
     </div>
 
-    <p class="closed"></p>
-    <a class="buttons" href="">
-        <p></p>
-    </a>
 
-    <br>
-    <br>
-
-    <a href="index.html">
-        <p class="buttons">Start Over.</p>
-    </a>
 </body>
 
 </html>
